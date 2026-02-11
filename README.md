@@ -1,6 +1,6 @@
 # flutter_funday
 
-A new Flutter project.
+A new Flutter project for android.
 
 ## Getting Started
 
