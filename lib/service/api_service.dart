@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter_funday/constants.dart';
-import 'package:flutter_funday/service/http_interceptor.dart';
 import 'package:flutter_funday/service/model/audio.dart';
 import 'package:retrofit/retrofit.dart';
 
@@ -81,7 +80,6 @@ class APIService {
       option.receiveTimeout = kHttpPingDownload;
 
       var dio = Dio(option);
-      dio.interceptors.add(HttpInterceptor());
 
       var response = await dio.get<List<int>>(
         url,
